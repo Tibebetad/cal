@@ -1,0 +1,87 @@
+<DOCTYPE html>
+  <html>
+ <head>
+  <meta charset="utf-8">
+  <title>scientific.c</title>
+   <link rel="stylesheet" href="calculator_style.css" type="text/css">
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+   
+  </head>
+  <body>
+   <div class="conatainer">
+    <form name="calc">
+     <input type="text" name="text" id="screen" >
+	 </form>
+	 <div class = "btns">
+	  <button onclick="document.calc.text.value=Math.sin(document.calc.text.value)">Sin</button>
+	  <button onclick="document.calc.text.value=Math.cos(document.calc.text.value)">Cos</button>
+	  <button onclick="document.calc.text.value=Math.tan(document.calc.text.value)">tan</button>
+	  <button onclick="document.calc.text.value=Math.log(document.calc.text.value)">log</button>
+	  
+	  <button onclick="document.calc.text.value=Math.pow(document.calc.text.value,2)">x<sup>2</sup></button>
+	  <button onclick="document.calc.text.value=Math.pow(document.calc.text.value,3)">x<sup>3</sup></button>
+	  <button onclick="document.calc.text.value=Math.sqrt(document.calc.text.value,1/2)">&radic;</button>
+	  <button onclick="document.calc.text.value=Math.sqrt(document.calc.text.value,1/3)">&#8731;</button>
+	  
+	  <button onclick="document.calc.text.value+='7'">7</button>
+	  <button onclick="document.calc.text.value+='8'">8</button>
+	  <button onclick="document.calc.text.value+='9'">9</button>
+	  <button onclick="document.calc.text.value=''" class="reset clear" clear>C</button> 
+	  
+	  <button onclick="document.calc.text.value+='4'">4</button>
+	  <button onclick="document.calc.text.value+='5'" >5</button>
+	  <button onclick="document.calc.text.value+='6'">6</button> 
+	  <button onclick= "del()" class="reset del">DEL</button>
+	  <button onclick="document.calc.text.value+='1'">1</button>  
+	  <button onclick="document.calc.text.value+='2'">2</button>
+	  <button onclick="document.calc.text.value+='3'">3</button>
+	  <button onclick="document.calc.text.value+='*'">*</button>
+	  
+	  
+	  <button onclick="document.calc.text.value+='.'">.</button>
+	  <button onclick="document.calc.text.value+='0'">0</button>
+	  <button onclick="document.calc.text.value+='-'">-</button>
+	  <button onclick="document.calc.text.value+='+'">+</button>
+
+	  
+	  <button onclick="document.calc.text.value+='/'">/</button>
+	  <button onclick="document.calc.text.value+='%'">%</button>
+	  <button onclick="document.calc.text.value=eval(document.calc.text.value)" class="reset equal">=</button>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   </div>
+     </div>
+	 
+	 
+	 <script type="text/javascript">
+	 
+	 function del(){
+	 var x=document.getElementBtId('screen').value;
+	 document.getElementBtId('screen').value=x.substr(0,x.length-1);
+	 
+	 
+	 }
+	 
+	 
+	 
+	 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
+  
+  </body>
+  </html>
+ 
